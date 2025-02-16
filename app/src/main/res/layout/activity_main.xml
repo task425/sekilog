@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="10"
+    tools:context=".Tensorflow">
+
+    <!-- このRelativeLayoutがカメラの画面（tensorflowの） -->
+    <RelativeLayout android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="9"
+        android:background="#FFFFFF">
+        <TextureView
+            android:id="@+id/texture_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+        <ImageView
+            android:id="@+id/image_view"
+            android:layout_width="640px"
+            android:layout_height="640px"
+            android:layout_margin="16dp"
+            android:visibility="visible"/>
+    </RelativeLayout>
+
+        <TextView
+            android:id="@+id/TTview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="設定を変えたい場合はタスク削除をしてください"
+            android:textColor="@color/red"
+            android:textStyle="bold"
+            android:layout_weight="1"
+            android:textSize="24sp"/>
+
+
+
+
+</LinearLayout>

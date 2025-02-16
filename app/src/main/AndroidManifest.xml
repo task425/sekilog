@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.myapplication">
+
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <application
+        android:name=".MyGlobals"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="セキログ"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MyApplication">
+        <activity
+            android:name=".ExplanationActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity android:name=".CloudOtamesiActivity" />
+        <activity
+            android:name=".DisplayActivity"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".DisplaySetumeiActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SelectNumberActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SelectAlphabeticActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SetumeiActivity2"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SetumeiActivity1"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Tensorflow"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".FirstActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

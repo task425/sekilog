@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">My Application</string>
+
+    <!-- スピナー(プルダウン)の内容 -->
+    <string-array name="spinner_alphabetic">
+        <item>A</item>
+        <item>B</item>
+        <item>C</item>
+        <!-- 本来はもっと続くが、デモはCブロックまでのためここまでにしている -->
+    </string-array>
+
+    <string-array name="spinner_number">
+        <item>1台目</item>
+        <item>2台目</item>
+        <item>3台目</item>
+        <item>4台目</item>
+        <item>5台目</item>
+    </string-array>
+
+</resources>
